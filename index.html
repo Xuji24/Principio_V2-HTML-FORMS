@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Website</title>
+    <link rel = "stylesheet" href = "./styles.css"/>
+</head>
+<body>
+  <!--Form-->
+  <header class="speaker-form-header">
+    <img src = "./DefinitelyEatersLogo.png" class = "logo" alt = "logo"/>
+    <h1 class="h1">Definitely Eaters</h1>
+    <h2>"Food that will take away your breath"</h2>
+    <p><em>"Every bite is worth your while." Fill up this form.</em></p>
+</header>
+
+<form action="" method="get" class="speaker-form">
+  <!--Name, Age, Email-->
+    <div class="form-row">
+        <label for="full-name">Name: </label>
+        <input type="text" id="full-name" name="full-name" autocomplete="off">
+    </div>
+    <div class="form-row">
+      <label for="age">Age: </label>
+      <input type="text" id="age" name="age" autocomplete="off">
+    </div>
+    <div class="form-row">
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="email" placeholder="user@example.com" autocomplete="off">
+    </div>
+  <!--Type of Cuisine and Menu-->
+    <div class="form-row">
+      <legend>Type of Cuisine:</legend>
+      <div id = "dropdown">
+        <button class = "dropdown-toggle">
+          <span>Menu</span>
+        </button>
+
+          <ul class = "menu">
+            <li class = "menu-item"><a href = "#">Japanese</a></li>
+            <li class = "menu-item"><a href = "#">Taiwanese</a></li>
+            <li class = "menu-item dropdown">
+              <a href = "#" class = "submenu-toggle">
+                <span>Healthy Options</span>
+              </a>
+              <ul class = "submenu">
+                <li class = "submenu-item"><a href = "#">Vegetarian</a></li>
+              </ul>
+            </li>
+
+            <li class = "menu-item"><a href = "#">Vietnamese</a></li>
+            <li class = "menu-item dropdown">
+              <a href = "#" class = "submenu-toggle">
+                <span>Specials</span>
+              </a>
+              <ul class = "submenu">
+                <li class = "submenu-item"><a href = "#">Halo-Halo</a></li>
+                <li class = "submenu-item"><a href = "#">Saging Con Yelo</a></li>
+                <li class = "submenu-item"><a href = "#">Saba Con Yelo</a></li>
+              </ul>
+            </li>
+          </ul>
+      </div>
+    </div>
+  <!--Cash or Card-->
+    <fieldset class = 'legacy-form-row'>
+        <legend>Mode of payment</legend>
+  
+        <input id = 'payment-type-1' name = 'payment-type' type = 'radio' value = 'cash' checked/>
+        <label for = 'payment-type-1' class = 'radio-label'>Cash</label>
+  
+        <input id = 'payment-type-2' name = 'payment-type' type = 'radio' value = 'card' />
+        <label for = 'payment-type-2' class = 'radio-label'>Card</label>
+    </fieldset>
+  <!--Dine-in or Take-out-->
+    <fieldset class = 'legacy-form-row'>
+      <legend>Dine-in or Take-out</legend>
+
+      <input id = 'eat-type-1' name = 'eat-type' type = 'radio' value = 'dine-in' checked/>
+      <label for = 'eat-type-1' class = 'radio-label'>Dine-in</label>
+
+      <input id = 'eat-type-2' name = 'eat-type' type = 'radio' value = 'take-out' />
+      <label for = 'eat-type-2' class = 'radio-label'>Take-out</label>
+    </fieldset>
+  <!---->
+    <div class="form-row">
+        <label for="abstract">Food Review:</label>
+        <textarea id="abstract" name="abstract"></textarea>
+        <div class="instructions">Describe your talk in 500 words or less</div>
+    </div>
+    <!-- Place Order and Cancel Button -->
+    <div class = "group-button">
+      <button class = "order button">Place Order</button>
+      <button class = "cancel button">Cancel</button>
+    </div>
+</form>
+  
+  <script src="./script.js"></script>
+</body>
+</html>
